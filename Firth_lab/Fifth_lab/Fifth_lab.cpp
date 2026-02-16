@@ -1,25 +1,19 @@
 #include <iostream>
 #include <locale.h>
+#include <conio.h>
 using namespace std;
 
-int max(double a, double b) {
-	double c;
-	if (a > b) c = a;
-	else c = b;
-	return c;
-}
-
+void print(char);      // прототип функции
 
 int main() {
-	setlocale(LC_ALL, "rus");
+    setlocale(LC_ALL, "rus");
 
-	double a, b, u, v, rez;
-	cout << "Введите a и b: ";
-	cin >> a >> b;
-	u = max(a, b);
-	v = max(a * b, a + b);
-
-	rez = max(u + v * v, 3.14);
-	cout << "Ответ: " << rez;
-	return 0;
+    char x;
+    cout << "\nВводите символы." << "Enter – окончание ввода";
+    do {
+        x = getch();
+        print(x);
+    } while (x != 13);
+    return 0;
 }
+void print(char a) { cout << a << "\t"; }

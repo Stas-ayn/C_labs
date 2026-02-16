@@ -8,6 +8,7 @@ int main() {
 
     const double eps = 1e-4;
     const double pi = 3.1415926535897932384626433832795;
+    double y = pi / 4;
     double x = pi / 2;
     short int n = 1;
     double S = 0;
@@ -22,6 +23,6 @@ int main() {
     cout << "\nИтоговая сумма: " << S << endl;
     cout << "Количество итераций: " << n - 1 << endl;
 
-
+    cout << y << endl;
     return 0;
 }

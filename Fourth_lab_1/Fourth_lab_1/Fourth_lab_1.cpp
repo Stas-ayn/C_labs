@@ -15,7 +15,7 @@ int main() {
 	for (int i = 0; i < n; i++) {
 		cout << "¬ведите координаты точки: ";
 		cin >> x >> y;
-		double dist = sqrtf(x * x + y * y);
+		double dist = sqrt(x * x + y * y);
 		if (dist > r1 && dist < r2) rez++;
 	}
 	cout << "ќтвет: " << rez;
